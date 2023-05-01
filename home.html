@@ -1,0 +1,328 @@
+<html>
+	<head>
+		<link rel="icon" href="Pictures/logo1.png">
+		<link href="style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AE | Home</title>
+	</head>
+	
+	<style>
+		.front1 {
+			background-image: url("Pictures/front1.jpg");
+		}
+		
+		.front2 {
+			background-image: url("Pictures/front2.jpg");
+		}
+		
+		.front3 {
+			background-image: url("Pictures/front3.jpg");
+		}
+
+		.grid1 {
+			display: grid;
+			grid-template-columns: 400px 650px;
+			grid-auto-rows: 400px;
+			grid-gap: 50px;
+			padding: 0px 50px;
+		}
+		
+		.grid2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-auto-rows: 220px;
+			grid-gap: 15px;
+			padding: 0px 150px;
+		}
+		
+		.grid2 div {
+			grid-gap: 0px;
+			padding: 40px 0px;
+			border-radius: 10px;
+			color: #b23737;
+			border: 2px solid #b23737;
+			transition: background 0.5s, transform 0.5s;
+		}
+			
+		.grid2 div:hover {
+			background-color: #b23737;
+			color: white;
+			transform: translateY(-10px);
+		}
+		
+		.icon {
+			width: 70px;
+			height:70px;
+		}
+		
+		@media screen and (max-width: 900px) {
+			.grid1 {
+				display: grid;
+				grid-template-columns: 40% 60%;
+				grid-auto-rows: 420px;
+				grid-gap: 20px;
+				padding: 0px 10px;
+			}
+			
+			.profile1 {
+				padding: 50px 0px;
+			}
+			
+			.grid2 {
+					display: grid;
+					grid-template-columns: 220px 220px 220px;
+					grid-auto-rows: 240px;
+					grid-gap: 1px;
+					padding: 0px 60px;
+				}
+				
+			.grid2_list {
+				margin-bottom: 30px;
+				width: 80%;
+				height: auto;
+			}
+		}
+		
+		@media screen and (max-width: 600px) {
+			.grid1 {
+				display: block;
+			}
+			
+			.grid1_list {
+				width: 100%;
+			}
+			
+			.grid2 {
+				display: grid;
+				grid-template-columns: 220px 220px;
+				grid-auto-rows: 240px;
+				grid-gap: 1px;
+				padding: 0px 30px;
+			}
+			
+			.grid2_list {
+				margin-bottom: 30px;
+				width: 80%;
+				height: auto;
+			}
+		}
+	</style>
+	
+	<body>
+		<!--NAVIGATION BAR-->
+			<nav>
+				<img src="Pictures/logo2.png" class="logo">
+				<ul>
+					<li><a class="active" href="home.html">HOME</a></li>
+					<li><a href="works.html">MY WORKS</a></li>
+					<li><a href="contacts.html">CONTACTS</a></li>
+				</ul>
+			</nav>
+
+
+		<!--FRONT 1-->
+			<div class="front1">
+			</div>
+
+
+		<!--ABOUT-->
+			<div class="container">
+				<div class="grid1">
+					<div class="grid1_list" style="position: abosolute;">
+						<img src="Pictures/profile1.jpg" alt="Angeline Duerme" class="profile1" style="width: 100%; height:auto;">
+					</div>
+					
+					<div class="grid1_list" style="position: abosolute;">
+						<center>
+							<img src="Pictures/logo1.png" alt="logo" style="width: 20%; height: 20%;">
+							<p style="font-size: 30px; margin-top: 10px; margin-bottom: 25px;">About</p>
+							<p style="margin-top: -20px; font-family: Calibri; font-size: 20px; color: #b23737;"><b>Ma. Angeline I. Duerme</b></p>
+						</center>	
+						<br>
+						<p style="text-align: justify; font-family: Calibri; font-size: 18px;">Reserved yet approachable. Observant and adaptable.
+						Always the one who always lend a hand to those in need and always willing to take the first step on doing every tasks.
+						An encourager and a great follower that sticks to the team's plan for achieving success.
+						An outstanding individual that always finish every task on hand without being on the spotlight.</p>		
+						<br>				
+						<center><a href="contacts.html" class="button">Learn More</a></center>
+					</div>
+				</div>
+			</div>
+		
+
+		<!--FRONT 2-->
+			<div class="front2">
+			</div>
+
+			
+		<!--SKILLS-->
+			<div class="container" style="padding-bottom: 100px;">
+				<center><h1 style="font-size: 38px;">MY SKILLS</h1></center>
+
+				<br>
+				
+				<div class="grid2">
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon1.png" alt="Java" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Java</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Intermediate</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon2.png" alt="C#"class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">C#</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Basic</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon3.png" alt="Python" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Python</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Basic</p>
+						</center>					
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon4.png" alt="Mobile App" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Mobile App</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Basic</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon5.png" alt="HTML" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">HTML</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Intermediate</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon6.png" alt="CSS" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">CSS</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Intermediate</p>					
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>				
+							<img src="Pictures/icon7.png" alt="Javascript" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Javascript</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Basic</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>				
+							<img src="Pictures/icon8.png" alt="SQL" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">SQL</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Basic</p>
+						</center>					
+					</div>
+				</div>
+				
+			</div>
+
+
+		<!--FRONT 3-->
+			<div class="front3">
+			</div>
+
+			
+		<!--HOBBIES-->
+			<div class="container">
+				<center><h1 style="font-size: 38px;">MY HOBBIES</h1></center>
+
+				<br>
+				
+				<div class="grid2">
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon9.png" alt="Web Browsing" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Browsing</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Most of the Time</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon10.png" alt="Videos"class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Watching</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Netflix, YouTube, etc.</p>
+						<center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon11.png" alt="Music" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Music</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Spotify is Life</p>
+						</center>					
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon12.png" alt="Games" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Playing</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Mobile Games</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon13.png" alt="Reading" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Reading</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Articles, Forums, etc.</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>
+							<img src="Pictures/icon14.png" alt="Writing" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Writing</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Sometimes</p>					
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>				
+							<img src="Pictures/icon15.png" alt="Sleeping" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Sleeping</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Why Not?</p>
+						</center>
+					</div>
+					
+					<div class="grid2_list">
+						<center>				
+							<img src="Pictures/icon16.png" alt="Daydreaming" class="icon">
+							<br><br>
+							<h2 style="font-size: 25px;">Daydreaming</h2>
+							<p style="font-family: Calibri; font-size: 18px;">Gathering Ideas</p>
+						</center>					
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
