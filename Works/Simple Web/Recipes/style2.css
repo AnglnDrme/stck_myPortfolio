@@ -1,0 +1,65 @@
+/*Web Development: 2nd Year, Second Semester; 2.2BSIT-CY3-AM*/
+
+/*General Design*/
+body, html {
+	height: 100%;
+	margin: 0px;
+}
+
+p, dd, dt, a, li {
+	font-family: Verdana;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: justify;
+	font-size: 20px;
+	color: black;
+}
+
+/*Taskbar*/
+.taskbar {
+	z-index: 1;
+	position: fixed;
+	top: 0px;
+	float: left;
+	background-color: #161616;
+	width: 100%;
+	}
+
+.taskbar a {
+	padding: 15px 15px;
+	float: right;
+	color: white;
+	text-decoration: none;
+	}
+			
+.taskbar a:hover {
+	background-color: #040404;
+	cursor: pointer;
+	}
+
+/*Dish Content*/
+.content_l {
+	position: relative;
+	top: 100px;
+	left: 100px;
+	margin-right: 200px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+
+/*Dish Picture 1*/
+.img1 {
+	position: absolute;
+	z-index: 0;
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	}
+
+/*Dish Picture 2*/
+.img2 { 
+	margin-top: 100px;
+	margin-bottom: 50px;
+	width: 700px;
+	height: 400px;
+	}

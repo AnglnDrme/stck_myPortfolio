@@ -1,0 +1,103 @@
+/*Web Development: 2nd Year, Second Semester; 2.2BSIT-CY3-AM*/
+
+/*General Design*/
+body, html {
+	height: 100%;
+	margin: 0px;
+}
+
+p, dd, dt, a {
+	font-family: Verdana;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: justify;
+	font-size: 20px;
+	color: black;
+}
+
+/*Taskbar*/
+.taskbar {
+	z-index: 1;
+	position: fixed;
+	top: 0px;
+	float: left;
+	background-color: #161616;
+	width: 100%;
+	}
+
+.taskbar a {
+	padding: 15px 15px;
+	float: right;
+	color: white;
+	text-decoration: none;
+	}
+			
+.taskbar a:hover {
+	background-color: #040404;
+	cursor: pointer;
+	}
+	
+/*Home*/
+.header_l {
+	background-image: url(Pictures/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	top: -21px;
+	height: 700px;
+	}
+
+.header_t {
+	padding-left: 50px;
+	text-align: justify;
+	color: white;
+	line-height: 0px;
+}
+
+/*Recipes: DIV, Tables, Images, Table Text*/
+.content_l {
+	position: relative;
+	background-color: white;
+}
+
+.content_t {
+	font-weight: bold;
+	font-size: 35px;
+	letter-spacing: 15px;
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	border-collapse: collapse;
+}
+			
+th {
+	border-left: 5px solid #F5F5F5;
+	border-right: 5px solid #F5F5F5;
+	text-align: left;
+	width: 400px;
+}
+
+th:hover {
+	background-color: #F5F5F5;
+	cursor: pointer;
+}
+
+img {
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 250px;
+	height: 250px;
+}
+
+.table_t {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: justify;
+}
